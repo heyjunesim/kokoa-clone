@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            height: 100vh;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        section {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .color {
+            width: 48%;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .color:first-child .color__bg {
+            background-color: tomato;
+        }
+
+        .color:nth-child(2) .color__bg {
+            background-color: teal;
+        }
+
+        .color:nth-child(3) .color__bg {
+            background-color: burlywood;
+        }
+
+        .color:last-child .color__bg {
+            background-color: thistle;
+        }
+
+        .color__bg {
+            height: 300px;
+            border: 5px solid white;
+        }
+
+        .color__info {
+            position: absolute;
+            width: 100%;
+            background-color: white;
+            top: 20px;
+            padding: 0px 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Best Colors</h1>
+    <section>
+        <article class="color">
+            <div class="color__bg"></div>
+            <div class="color__info">
+                <h3>Tomato</h3>
+                <h5>#FF6347</h5>
+            </div>
+        </article>
+        <article class="color">
+            <div class="color__bg"></div>
+            <div class="color__info">
+                <h3>Teal</h3>
+                <h5>#008080</h5>
+            </div>
+        </article>
+        <article class="color">
+            <div class="color__bg"></div>
+            <div class="color__info">
+                <h3>Burlywood</h3>
+                <h5>#DEB887</h5>
+            </div>
+        </article>
+        <article class="color">
+            <div class="color__bg"></div>
+            <div class="color__info">
+                <h3>Thistle</h3>
+                <h5>#D7BFD7</h5>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>

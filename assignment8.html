@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <title>Assignment8</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            width: 60%;
+            height: 60%;
+            margin: 0 auto;
+            background-color: #6bbcbe;
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        @keyframes drawArc {
+            0% {transform: rotate(0deg);}
+            40% {transform: rotate(180deg);}
+            50% {transform: rotate(180deg);}
+            90% {transform: rotate(360deg);}
+            100% {transform: rotate(360deg);}
+        }
+        @keyframes scale {
+            0% {transform:scaleY(1);}
+            20% {transform: scaleY(1.5);}
+            40% {transform: scaleY(1);}
+            100% {transform: scaleY(1);}
+        }
+        .circlebox {
+            animation: drawArc 2s ease-in-out infinite;
+            height:70%;
+        }
+
+        .circle {
+            margin:10px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .stick {
+            position:relative;
+            top:-20px;
+            margin: 10px;
+            width: 7px;
+            height: 30px;
+            background-color: white;
+        }
+        .stick:first-child {
+            animation: scale 1s ease-in-out infinite;
+        }
+        .stick:nth-child(2) {
+            animation: scale 1s ease-in-out infinite;
+            animation-delay: 0.1s;
+        }
+        .stick:nth-child(3) {
+            animation: scale 1s ease-in-out infinite;
+            animation-delay: 0.2s;
+        }
+        .stick:nth-child(4) {
+            animation: scale 1s ease-in-out infinite;
+            animation-delay: 0.3s;
+        }
+        .stick:last-child {
+            animation: scale 1s ease-in-out infinite;
+            animation-delay: 0.4s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <article class="circlebox">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </article>
+        <article>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </article>
+    </section>
+</body>
+
+</html>
