@@ -1,0 +1,11 @@
+:root {
+  --main-color: #c3e3d6;
+  --second-color: #d3eaf7;
+  --shade-color: #dddddd;
+  --point-color: #d7015b;
+  --black: rgb(0, 8, 15);
+  --yellow: #f8dd7a;
+  --grey: #8b8b8b;
+  --horizontal-space: 25px;
+  --border: 1px solid rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/*Components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/dot.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/only-mobile.css";
+
+/*Screens*/
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--main-color);
+  color: var(--black);
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+i:hover {
+  color: var(--point-color);
+  opacity: 70%;
+}
+
+a > :hover {
+  color: var(--point-color);
+  opacity: 100%;
+}
