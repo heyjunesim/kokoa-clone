@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="shortcut icon"
+        sizes="16x16 32x32 64x64"
+        href="https://i.pinimg.com/originals/01/e2/5f/01e25fb83d47cafd8e380aa49db22038.png"/>
+    <title>Pochacco Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <img src="https://www.sanrio.co.jp/wp-content/uploads/2013/09/pochacco_b.png"/>
+        <span class="welcome-header__title">Pochacco Talk</span>
+        <p class="welcome-header__text">If you have a Kokoa Account,</p>
+        <p class="welcome-header__text">log in with your email or phone number.</p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" required type="text" placeholder="Email or phone number"/>
+        <input name="password" required type="password" placeholder="Password" minlength="10"/>
+        <input type ="submit" value="Log In"/>
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <div id="only-mobile">
+        <img src="https://static.wikia.nocookie.net/hellokitty/images/c/c2/Sanrio_Characters_Pochacco_Image005.png/revision/latest/scale-to-width-down/700?cb=20170406171435"/>
+        <div class="text">
+            <p>Make your screen smaller!</p>
+            <p>← This way!</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous">
+    </script>
+</body>
+</html>
